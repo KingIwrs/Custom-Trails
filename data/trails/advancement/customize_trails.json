@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "trail_customizer": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "trails:customize_trails/start"
+    }
+}
