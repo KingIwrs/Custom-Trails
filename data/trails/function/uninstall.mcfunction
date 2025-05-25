@@ -10,3 +10,8 @@ data remove storage trails:temp get_customization
 scoreboard objectives remove trails.trail_status
 scoreboard objectives remove trails.amount
 scoreboard objectives remove trails.iterator
+
+datapack disable "file/Custom Trails 25w21a - 0.0.1.zip"
+datapack disable "file/Custom Trails 25w21a - 0.0.1"
+datapack disable "file/Custom-Trails"
+datapack disable "file/Custom Trails"
