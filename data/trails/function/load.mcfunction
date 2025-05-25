@@ -3,7 +3,7 @@ execute unless data storage trails:data styles run data modify storage trails:da
 execute unless data storage trails:data colors run data modify storage trails:data colors set value []
 
 function trails:add/style {id: "default", name: "Default", function: "trails:default/default"}
-function trails:add/style {id: "circler", name: "Circler", function: "trails:default/circler"}
+function trails:add/style {id: "orbit", name: "Orbit", function: "trails:default/orbit"}
 
 function trails:add/color {id: "black", name: "Black", color: [0.000, 0.000, 0.000]}
 function trails:add/color {id: "blue", name: "Blue", color: [0.000, 0.000, 1.000]}
