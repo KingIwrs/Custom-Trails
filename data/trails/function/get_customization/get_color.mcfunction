@@ -3,5 +3,6 @@ $execute if data storage trails:data players[{uuid:$(uuid)}].owned{colors:["$(id
 
 $data modify storage trails:data players[{uuid:$(uuid)}].owned.colors append value "$(id)"
 $title @s actionbar [{text: "Color ", color: green}, {text: "[$(name)]", color: light_purple}, {text: " now unlocked.", color: green}]
+$tellraw @a [{selector: "@s"}, {text: " has unlocked the color "}, {text: "[$(name)]", color: light_purple}]
 
 return 1
