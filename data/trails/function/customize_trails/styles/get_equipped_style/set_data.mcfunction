@@ -1,2 +1,1 @@
-$data modify storage trails:temp customize.style_options[{id:"$(id)"}].display.color set value "green"
-$data modify storage trails:temp customize.style_options[{id:"$(id)"}] merge value {initial: true}
+$data modify storage trails:temp customize.style_options append value {id: "$(id)", display: {text: "$(id)", color: "green"}}

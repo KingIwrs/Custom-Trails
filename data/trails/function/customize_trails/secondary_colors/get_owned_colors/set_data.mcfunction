@@ -1,1 +1,1 @@
-$data modify storage trails:temp customize.secondary_color_options[{id:"$(id)"}].display.color set value "yellow"
+$execute unless data storage trails:temp customize.secondary_color_options[{id: "$(id)"}] run data modify storage trails:temp customize.secondary_color_options append value {id: "$(id)", display: {text: "$(id)", color: "yellow"}}
