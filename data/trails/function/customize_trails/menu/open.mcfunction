@@ -1,5 +1,5 @@
 $dialog show @s {\
-    "type": "minecraft:simple_input_form",\
+    "type": "minecraft:multi_action",\
     "title": {\
         "translate": "dialogs.custom_trails.title",\
         "fallback": "Custom Trails"\
@@ -32,15 +32,22 @@ $dialog show @s {\
             "options": $(secondary_color_options)\
         }\
     ],\
-    "action": {\
+    "actions": [\
+        {\
+            "label": {\
+                "translate": "dialogs.custom_trails.save",\
+                "fallback": "Save"\
+            },\
+            "action": {\
+                "type": "minecraft:dynamic/run_command",\
+                "template": "function trails:customize_trails/menu/change_trails {uuid: $(uuid), status: $(status), style: \"$(style)\", primary_color: \"$(primary_color)\", secondary_color: \"$(secondary_color)\"}"\
+            }\
+        }\
+    ],\
+    "exit_action": {\
         "label": {\
-            "translate": "dialogs.custom_trails.submit",\
-            "fallback": "Submit"\
-        },\
-        "id": "",\
-        "on_submit": {\
-            "type": "minecraft:command_template",\
-            "template": "function trails:customize_trails/menu/change_trails {uuid: $(uuid), status: $(status), style: \"$(style)\", primary_color: \"$(primary_color)\", secondary_color: \"$(secondary_color)\"}"\
+            "translate": "dialogs.custom_trails.back",\
+            "fallback": "Back"\
         }\
     }\
 }
