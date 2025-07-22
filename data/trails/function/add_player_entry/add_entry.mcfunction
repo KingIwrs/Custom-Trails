@@ -1,2 +1,2 @@
-$execute unless data storage trails:data players[{uuid:$(uuid)}] run data modify storage trails:data players append value {uuid:$(uuid), equipped: {style: "", primary_color: "", secondary_color: ""}, owned: {styles: ["default"], colors: ["red", "green", "blue"]}}
+$execute unless data storage trails:data players[{uuid:$(uuid)}] run data modify storage trails:data players append value {uuid:$(uuid), equipped: {style: "", primary_color: "", secondary_color: ""}, owned: {styles: ["trails:default"], colors: ["trails:red", "trails:green", "trails:blue"]}}
 tellraw @a [{"selector": "@s", "color": "yellow"},{"text": " has been added to the Custom Trails database.", "color": "yellow"}]
